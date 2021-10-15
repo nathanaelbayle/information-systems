@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="cineprex.list">
+      <field name="name">cineprex list</field>
+      <field name="model">cineprex.cineprex</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+
+-->
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="cineprex.action_window">
+      <field name="name">cineprex window</field>
+      <field name="res_model">cineprex.cineprex</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+-->
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="cineprex.action_server">
+      <field name="name">cineprex server</field>
+      <field name="model_id" ref="model_cineprex_cineprex"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="cineprex" id="cineprex.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="cineprex.menu_1" parent="cineprex.menu_root"/>
+    <menuitem name="Menu 2" id="cineprex.menu_2" parent="cineprex.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="cineprex.menu_1_list" parent="cineprex.menu_1"
+              action="cineprex.action_window"/>
+    <menuitem name="Server to list" id="cineprex" parent="cineprex.menu_2"
+              action="cineprex.action_server"/>
+-->
+  </data>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="movie_list_view">
+      <field name="name">Movie list</field>
+      <field name="model">cineprex.movie</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="filmmaker"/>
+          <field name="duration"/>
+          <field name="provider_id"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="movie_form_view">
+      <field name="name">Movie form</field>
+      <field name="model">cineprex.movie</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="filmmaker"/>
+            <field name="duration"/>
+            <field name="provider_id"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="movie_action_window">
+      <field name="name">Films</field>
+      <field name="res_model">cineprex.movie</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="cineprex" id="cineprex.menu_root"/>
+    <menuitem name="Films" id="cineprex_movie_cat" parent="cineprex.menu_root" action="movie_action_window"/>
+
+</odoo>

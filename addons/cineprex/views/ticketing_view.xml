@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="ticketing_list_view">
+      <field name="name">Ticketing list</field>
+      <field name="model">cineprex.ticketing</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="price"/>
+          <field name="filmshow_id"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="ticketing_form_view">
+      <field name="name">Ticketing form</field>
+      <field name="model">cineprex.ticketing</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+                <field name="name"/>
+                <field name="price"/>
+                <field name="filmshow_id"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="ticketing_action_window">
+      <field name="name">Tickets</field>
+      <field name="res_model">cineprex.ticketing</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="cineprex" id="cineprex.menu_root"/>
+    <menuitem name="Tickets" id="cineprex_ticketing_cat" parent="cineprex.menu_root" action="ticketing_action_window"/>
+
+
+</odoo>

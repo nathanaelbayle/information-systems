@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="cinema_list_view">
+      <field name="name">Cinéma liste</field>
+      <field name="model">./cineprex.cinema</field>
+      <field name="arch" type="xml">
+        <tree>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="cinema_form_view">
+      <field name="name">Cinéma liste</field>
+      <field name="model">./cineprex.cinema</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="nom"/>
+            <field name="adresse"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="cinema_action_window">
+      <field name="name">Cinémas</field>
+      <field name="res_model">./cineprex.cinema</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="cineprex" id="cineprex.menu_root"/>
+    <menuitem name="Cinémas" id="cineprex_cinema_cat" parent="cineprex.menu_root" action="cinema_action_window"/>
+
+</odoo>
