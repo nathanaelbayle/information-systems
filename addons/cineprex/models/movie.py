@@ -5,6 +5,12 @@ from odoo import models, fields
 class CineprexMovie(models.Model):
     _name = 'cineprex.movie'
 
+    nom = fields.Char()
+    realisateur = fields.Char()
+    duree = fields.Integer()
+    description = fields.Char()
+    
+
     name = fields.Char()
     filmmaker = fields.Char()
     duration = fields.Integer()

@@ -2,6 +2,6 @@
 
 from . import cinema
 from . import movie
-from . import room
+from . import salle
 from . import ticketing
 from . import filmshow

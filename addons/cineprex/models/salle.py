@@ -2,8 +2,8 @@
 
 from odoo import models, fields
 
-class CineprexRoom(models.Model):
-    _name = 'cineprex.room'
+class CineprexSalle(models.Model):
+    _name = 'cineprex.salle'
 
     numero = fields.Integer()
     nb_place = fields.Integer()
@@ -12,5 +12,6 @@ class CineprexRoom(models.Model):
     dolby = fields.Boolean()
 
     cinema_id = fields.Many2one(comodel_name='cineprex.cinema')
-    
-    # filmshow_ids = fields.One2many(comodel_name='cineprex.filmshow', inverse_name='room_id')
+
+
+        
