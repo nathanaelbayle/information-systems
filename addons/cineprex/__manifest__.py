@@ -26,6 +26,7 @@
         # 'security/ir.model.access.csv',
         #'views/views.xml',
         #'views/templates.xml',
+        'demo/demo.xml',
         'views/cinema_view.xml',
         'views/movie_view.xml',
         'views/room_view.xml',

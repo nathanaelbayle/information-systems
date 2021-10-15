@@ -3,21 +3,27 @@
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="cinema_list_view">
       <field name="name">Cinéma liste</field>
-      <field name="model">./cineprex.cinema</field>
+      <field name="model">cineprex.cinema</field>
       <field name="arch" type="xml">
         <tree>
+            <field name="nom"/>
+            <field name="adresse"/>
+            <field name="ville"/>
+            <field name="code_postal"/>
         </tree>
       </field>
     </record>
 
     <record model="ir.ui.view" id="cinema_form_view">
       <field name="name">Cinéma liste</field>
-      <field name="model">./cineprex.cinema</field>
+      <field name="model">cineprex.cinema</field>
       <field name="arch" type="xml">
         <form>
           <group>
             <field name="nom"/>
             <field name="adresse"/>
+            <field name="ville"/>
+            <field name="code_postal"/>
           </group>
         </form>
       </field>
@@ -26,7 +32,7 @@
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="cinema_action_window">
       <field name="name">Cinémas</field>
-      <field name="res_model">./cineprex.cinema</field>
+      <field name="res_model">cineprex.cinema</field>
       <field name="view_mode">tree,form</field>
     </record>
 

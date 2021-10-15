@@ -2,11 +2,11 @@
 
 from odoo import models, fields
 
-class CineprexProvider(models.Model):
+class CineprexCinema(models.Model):
     _name = 'cineprex.cinema'
 
     nom = fields.Char()
     adresse = fields.Char()
     ville = fields.Char()
     code_postal = fields.Integer()
-    movie_ids = fields.One2many(comodel_name='cineprex.movie', inverse_name='cinema_id')
+    movie_ids = fields.One2many(comodel_name='cineprex.movie', inverse_name='provider_id')
