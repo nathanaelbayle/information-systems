@@ -6,10 +6,11 @@
       <field name="model">cineprex.room</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="seat"/>
-          <field name="threeDimension"/>
-          <field name="airConditioner"/>
+          <field name="numero"/>
+          <field name="nb_place"/>
+          <field name="salle_3D"/>
+          <field name="dolby"/>
+          <field name="cinema_id"/>
         </tree>
       </field>
     </record>
@@ -20,10 +21,11 @@
       <field name="arch" type="xml">
         <form>
           <group>
-              <field name="name"/>
-              <field name="seat"/>
-              <field name="threeDimension"/>
-              <field name="airConditioner"/>
+          <field name="numero"/>
+          <field name="nb_place"/>
+          <field name="salle_3D"/>
+          <field name="dolby"/>
+          <field name="cinema_id"/>
           </group>
         </form>
       </field>
@@ -39,4 +41,4 @@
     <menuitem name="cineprex" id="cineprex.menu_root"/>
     <menuitem name="Salles" id="cineprex_room_cat" parent="cineprex.menu_root" action="room_action_window"/>
 
-</odoo>
+</odoo> 

@@ -9,4 +9,7 @@ class CineprexCinema(models.Model):
     adresse = fields.Char()
     ville = fields.Char()
     code_postal = fields.Integer()
-    movie_ids = fields.One2many(comodel_name='cineprex.movie', inverse_name='provider_id')
+
+    room_ids = fields.One2many(comodel_name='cineprex.room', inverse_name='cinema_id')
+
+    # movie_ids = fields.One2many(comodel_name='cineprex.movie', inverse_name='cinema_id')

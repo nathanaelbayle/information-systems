@@ -9,7 +9,7 @@
         Ce module permet la gestion de cineprex
     """,
 
-    'author': "Marc-Alexis",
+    'author': "Nathanaël Bayle, Clément Buonvino, Adrien Guy",
     'website': "https://www.univ-lr.com",
 
     # Categories can be used to filter modules in modules listing
@@ -23,9 +23,6 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        #'views/views.xml',
-        #'views/templates.xml',
         'demo/demo.xml',
         'views/cinema_view.xml',
         'views/movie_view.xml',
