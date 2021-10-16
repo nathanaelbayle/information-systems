@@ -1,5 +1,6 @@
 <odoo>
   <data>
+
     <!-- Liste des Cinémas -->
     <record id="cinema_1" model="cineprex.cinema">
       <field name="nom">Cinéma Paté</field>
@@ -160,7 +161,20 @@
       <field name="dolby">true</field>
       <field name="cinema_id" ref="cinema_5"/>
     </record>
-    
+    <record id="room_19" model="cineprex.salle">
+      <field name="numero">19</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">false</field>
+      <field name="cinema_id" ref="cinema_2"/>
+    </record>
+    <record id="room_20" model="cineprex.salle">
+      <field name="numero">20</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">false</field>
+      <field name="cinema_id" ref="cinema_2"/>
+    </record> 
 
     <!-- Liste des Films -->
     <record id="movie_1" model="cineprex.movie">
@@ -198,49 +212,112 @@
       <field name="duree">163</field>
       <field name="description">Dans la Grèce antique, l'enlèvement d'Hélène, reine de Sparte, par Paris, prince de Troie, est une insulte que le roi Ménélas ne peut supporter. L'honneur familial étant en jeu, Agamemnon, frère de Ménélas et puissant roi de Mycènes, réunit toutes les armées grecques afin de faire sortir Hélène de Troie. L'issue de la guerre de Troie dépendra notamment d'un homme, Achille. Arrogant, rebelle, et réputé invicible, celui-ci n'a d'attache pour rien ni personne si ce n'est sa propre gloire.</field>
     </record>
-
+    <record id="movie_5" model="cineprex.movie">
+      <field name="nom">Eiffel</field>
+      <field name="realisateur">Martin Bourboulon</field>
+      <field name="date_sortie">2021-05-19</field>
+      <field name="duree">108</field>
+      <field name="description">Venant tout juste de terminer sa collaboration sur la Statue de la Liberté, Gustave Eiffel est au sommet de sa carrière. Le gouvernement français veut qu'il crée quelque chose de spectaculaire pour l'Exposition Universelle de 1889 à Paris, mais Eiffel ne s'intéresse qu'au projet de métropolitain. Tout bascule le jour où il recroise son amour de jeunesse. Leur relation interdite l'inspire à changer l'horizon de Paris pour toujours.</field>
+    </record>
 
     <!-- Liste des Séance -->
-    <record id="seance_1" model="cineprex.seance"> 
-      <field name="horaire">2021-10-18 10:00:00</field>
-      <field name="salle_id" ref="room_1"/>
-      <field name="movie_id" ref="movie_1"/>
+    
+      <!-- Séance du 18 Octobre -->
+      <record id="seance_1" model="cineprex.seance"> 
+        <field name="horaire">2021-10-18 09:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+      <record id="seance_2" model="cineprex.seance"> 
+        <field name="horaire">2021-10-18 13:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+      <record id="seance_3" model="cineprex.seance"> 
+        <field name="horaire">2021-10-18 16:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>    
+      <record id="seance_4" model="cineprex.seance"> 
+        <field name="horaire">2021-10-18 19:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+      <record id="seance_5" model="cineprex.seance"> 
+        <field name="horaire">2021-10-18 22:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+
+      <!-- Séance du 19 Octobre -->
+      <record id="seance_1" model="cineprex.seance"> 
+        <field name="horaire">2021-10-19 09:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+      <record id="seance_2" model="cineprex.seance"> 
+        <field name="horaire">2021-10-19 13:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+      <record id="seance_3" model="cineprex.seance"> 
+        <field name="horaire">2021-10-19 16:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>    
+      <record id="seance_4" model="cineprex.seance"> 
+        <field name="horaire">2021-10-19 19:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+      <record id="seance_5" model="cineprex.seance"> 
+        <field name="horaire">2021-10-19 22:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_1"/>
+      </record>
+
+
+      <!-- Séance du 20 Octobre -->
+      <record id="seance_6" model="cineprex.seance">
+        <field name="horaire">2021-10-20 16:00:00</field>
+        <field name="salle_id" ref="room_20"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_7" model="cineprex.seance">
+        <field name="horaire">2021-10-20 10:00:00</field>
+        <field name="salle_id" ref="room_20"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+
+      <!-- Séance du 21 Octobre -->
+      <record id="seance_8" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+
+
+    <!-- Liste des Tarifs -->
+    <record id="tarif_1" model="cineprex.tarif">
+      <field name="name">Etudiant</field>
+      <field name="age">25</field>
+      <field name="price">7</field>
     </record>
-    <record id="seance_12" model="cineprex.seance"> 
-      <field name="horaire">2021-10-18 13:00:00</field>
-      <field name="salle_id" ref="room_1"/>
-      <field name="movie_id" ref="movie_1"/>
+    <record id="tarif_2" model="cineprex.tarif">
+      <field name="name">Seignor</field>
+      <field name="age">75</field>
+      <field name="price">5</field>
     </record>
-    <record id="seance_13" model="cineprex.seance"> 
-      <field name="horaire">2021-10-18 16:00:00</field>
-      <field name="salle_id" ref="room_1"/>
-      <field name="movie_id" ref="movie_1"/>
-    </record>    
-    <record id="seance_14" model="cineprex.seance"> 
-      <field name="horaire">2021-10-18 19:00:00</field>
-      <field name="salle_id" ref="room_1"/>
-      <field name="movie_id" ref="movie_1"/>
+    <record id="tarif_3" model="cineprex.tarif">
+      <field name="name">Enfant</field>
+      <field name="age">7</field>
+      <field name="price">2</field>
     </record>
-    <record id="seance_15" model="cineprex.seance"> 
-      <field name="horaire">2021-10-18 22:00:00</field>
-      <field name="salle_id" ref="room_1"/>
-      <field name="movie_id" ref="movie_1"/>
-    </record>
-    <record id="seance_2" model="cineprex.seance">
-      <field name="horaire">2022-03-21</field>
-      <field name="salle_id" ref="room_3"/>
-      <field name="movie_id" ref="movie_2"/>
-    </record>
-    <record id="seance_3" model="cineprex.seance">
-      <field name="horaire">2022-03-23</field>
-      <field name="salle_id" ref="room_5"/>
-      <field name="movie_id" ref="movie_5"/>
-    </record>
-    <record id="seance_4" model="cineprex.seance">
-      <field name="horaire">2022-11-03</field>
-      <field name="salle_id" ref="room_17"/>
-      <field name="movie_id" ref="movie_5"/>
+    <record id="tarif_4" model="cineprex.tarif">
+      <field name="name">Plein tarif</field>
+      <field name="age">99</field>
+      <field name="price">10</field>
     </record>
 
-    </data>
+  </data>
 </odoo>

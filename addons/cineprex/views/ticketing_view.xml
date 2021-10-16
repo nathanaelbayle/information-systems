@@ -6,9 +6,9 @@
       <field name="model">cineprex.ticket</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="price"/>
-          <field name="filmshow_id"/>
+          <field name="seance_id"/>
+          <field name="tarif_id"/>
+          <field name="prix"/>
         </tree>
       </field>
     </record>
@@ -19,9 +19,9 @@
       <field name="arch" type="xml">
         <form>
           <group>
-                <field name="name"/>
-                <field name="price"/>
-                <field name="filmshow_id"/>
+            <field name="seance_id"/>
+            <field name="tarif_id"/>
+            <field name="prix"/>
           </group>
         </form>
       </field>

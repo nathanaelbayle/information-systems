@@ -29,13 +29,12 @@
         'views/movie_view.xml',
         'views/seance_view.xml',
         'views/ticketing_view.xml',
+        'views/tarif_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-
-    'css': ['style.css'],
 
     'installable': True,
     'application': True,
