@@ -12,3 +12,8 @@ docker-compose up
 
 - Then go to your [this url](http://localhost:8069/).
 
+- If you need to login, use :
+    - mail : `john.doe@example.com`
+    - password : `admin`
+    - master password : `kfsi-p8et-hzpi`
+` 
