@@ -2,10 +2,11 @@
 <odoo>
     <!-- explicit list view definition -->
     <record model="ir.ui.view" id="salle_list_view">
-      <field name="name">Salle list</field>
+      <field name="name">Liste des salles</field>
       <field name="model">cineprex.salle</field>
       <field name="arch" type="xml">
         <tree>
+          <field name="valeur"/>
           <field name="numero"/>
           <field name="nb_place"/>
           <field name="salle_3D"/>
@@ -15,9 +16,8 @@
       </field>
     </record>
 
-
     <record model="ir.ui.view" id="salle_form_view">
-      <field name="name">Salle form</field>
+      <field name="name">Formulaire salle</field>
       <field name="model">cineprex.salle</field>
       <field name="arch" type="xml">
         <form>
@@ -26,7 +26,6 @@
             <field name="nb_place"/>
             <field name="salle_3D"/>
             <field name="dolby"/>
-            <field name="cinema_id"/>
             <field name="seance_id"/>
           </group>
         </form>
@@ -43,4 +42,4 @@
     <menuitem name="cineprex" id="cineprex.menu_root"/>
     <menuitem name="Salles" id="cineprex_salle_cat" parent="cineprex.menu_root" action="salle_action_window"/>
 
-</odoo> 
+</odoo>

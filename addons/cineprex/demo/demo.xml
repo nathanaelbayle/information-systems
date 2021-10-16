@@ -202,11 +202,31 @@
 
     <!-- Liste des Séance -->
     <record id="seance_1" model="cineprex.seance"> 
-      <field name="horaire">2022-03-12</field>
+      <field name="horaire">2021-10-18 10:00:00</field>
       <field name="salle_id" ref="room_1"/>
       <field name="movie_id" ref="movie_1"/>
     </record>
-        <record id="seance_2" model="cineprex.seance">
+    <record id="seance_12" model="cineprex.seance"> 
+      <field name="horaire">2021-10-18 13:00:00</field>
+      <field name="salle_id" ref="room_1"/>
+      <field name="movie_id" ref="movie_1"/>
+    </record>
+    <record id="seance_13" model="cineprex.seance"> 
+      <field name="horaire">2021-10-18 16:00:00</field>
+      <field name="salle_id" ref="room_1"/>
+      <field name="movie_id" ref="movie_1"/>
+    </record>    
+    <record id="seance_14" model="cineprex.seance"> 
+      <field name="horaire">2021-10-18 19:00:00</field>
+      <field name="salle_id" ref="room_1"/>
+      <field name="movie_id" ref="movie_1"/>
+    </record>
+    <record id="seance_15" model="cineprex.seance"> 
+      <field name="horaire">2021-10-18 22:00:00</field>
+      <field name="salle_id" ref="room_1"/>
+      <field name="movie_id" ref="movie_1"/>
+    </record>
+    <record id="seance_2" model="cineprex.seance">
       <field name="horaire">2022-03-21</field>
       <field name="salle_id" ref="room_3"/>
       <field name="movie_id" ref="movie_2"/>

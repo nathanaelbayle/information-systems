@@ -13,17 +13,6 @@
       </field>
     </record>
 
-
-    <record model="ir.ui.view" id="seance_list_view">
-      <field name="name">seance list</field>
-      <field name="model">cineprex.seance</field>
-      <field name="arch" type="xml">
-        <calendar string="Ideas" date_start="horaire" date_stop="horaire">
-          <field name="salle_id"/>
-        </calendar>
-      </field>
-    </record>
-
     <record model="ir.ui.view" id="seance_form_view">
       <field name="name">seance form</field>
       <field name="model">cineprex.seance</field>
@@ -38,11 +27,22 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="seance_calendar_view">
+      <field name="name">Calendrier Séances</field>
+      <field name="model">cineprex.seance</field>
+      <field name="arch" type="xml">
+      <calendar string="Planning des Séance" date_start="horaire" mode="month" color="valeur" quick_add="False" >
+         <field name="valeur"/>
+      </calendar>
+     </field>
+    </record>
+
+
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="seance_action_window">
       <field name="name">Séances</field>
       <field name="res_model">cineprex.seance</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,calendar</field>
     </record>
 
     <menuitem name="cineprex" id="cineprex.menu_root"/>
