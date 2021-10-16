@@ -1,1 +1,5 @@
-36p9-8nau-bgnx
+kfsi-p8et-hzpi
+
+logins :
+- john.doe@example.com
+- admin

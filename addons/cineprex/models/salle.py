@@ -13,5 +13,5 @@ class CineprexSalle(models.Model):
 
     cinema_id = fields.Many2one(comodel_name='cineprex.cinema')
 
-
-        
+    seance_id = fields.One2many(comodel_name='cineprex.seance', inverse_name='salle_id')
+    

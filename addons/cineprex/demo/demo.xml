@@ -1,51 +1,226 @@
 <odoo>
   <data>
-  
-    <record id="object0" model="cineprex.cinema">
+    <!-- Liste des Cinémas -->
+    <record id="cinema_1" model="cineprex.cinema">
       <field name="nom">Cinéma Paté</field>
       <field name="adresse">3 rue des rouge-gorges</field>
       <field name="ville">Saintes</field>
       <field name="code_postal">17400</field>
     </record>
-
-<!--
-    <record id="room_1" model="cineprex.room">
-      <field name="name">1</field>
-      <field name="seat">20</field>
-      <field name="threeDimension">True</field>
-      <field name="airConditioner">False</field>
+    <record id="cinema_2" model="cineprex.cinema">
+      <field name="nom">Cinéma Les quatres lions</field>
+      <field name="adresse">6 impasse Saint-Louis</field>
+      <field name="ville">La Rochelle</field>
+      <field name="code_postal">17000</field>
     </record>
--->
-    <!--
+    <record id="cinema_3" model="cineprex.cinema">
+      <field name="nom">Cinéma grandiose</field>
+      <field name="adresse">2 avenue Voltaire</field>
+      <field name="ville">Narbonne</field>
+      <field name="code_postal">11100</field>
+    </record>
+    <record id="cinema_4" model="cineprex.cinema">
+      <field name="nom">Cinéma La grande salle</field>
+      <field name="adresse">3 rue du 11 novembre</field>
+      <field name="ville">Carcassonne</field>
+      <field name="code_postal">11000</field>
+    </record>
+    <record id="cinema_5" model="cineprex.cinema">
+      <field name="nom">Cinéma Les pierres roses</field>
+      <field name="adresse"> boulevard des occitans</field>
+      <field name="ville">Toulouse</field>
+      <field name="code_postal">31000</field>
+    </record>
 
-    <field name="room_ids">
-      
-      </field>
+   
+    <!-- Liste des Sales -->
+    <record id="room_1" model="cineprex.salle">
+      <field name="numero">1</field>
+      <field name="nb_place">400</field>
+      <field name="salle_3D">true</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_1"/>
+    </record>
+    <record id="room_2" model="cineprex.salle">
+      <field name="numero">2</field>
+      <field name="nb_place">400</field>
+      <field name="salle_3D">true</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_1"/>
+    </record>
+    <record id="room_3" model="cineprex.salle">
+      <field name="numero">3</field>
+      <field name="nb_place">400</field>
+      <field name="salle_3D">true</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_1"/>
+    </record>
+    <record id="room_4" model="cineprex.salle">
+      <field name="numero">4</field>
+      <field name="nb_place">400</field>
+      <field name="salle_3D">true</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_1"/>
+    </record>
+    <record id="room_5" model="cineprex.salle">
+      <field name="numero">5</field>
+      <field name="nb_place">400</field>
+      <field name="salle_3D">true</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_2" />
+    </record>
+    <record id="room_6" model="cineprex.salle">
+      <field name="numero">6</field>
+      <field name="nb_place">400</field>
+      <field name="salle_3D">true</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_2"/>
+    </record>
+    <record id="room_7" model="cineprex.salle">
+      <field name="numero">7</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_3"/>
+    </record>
+    <record id="room_8" model="cineprex.salle">
+      <field name="numero">8</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_3"/>
+    </record>
+    <record id="room_9" model="cineprex.salle">
+      <field name="numero">9</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_3"/>
+    </record>
+    <record id="room_10" model="cineprex.salle">
+      <field name="numero">10</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_3"/>
+    </record>
+    <record id="room_11" model="cineprex.salle">
+      <field name="numero">11</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_3"/>
+    </record>
+    <record id="room_12" model="cineprex.salle">
+      <field name="numero">12</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_3"/>
+    </record>
+    <record id="room_13" model="cineprex.salle">
+      <field name="numero">13</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_4"/>
+    </record>
+    <record id="room_14" model="cineprex.salle">
+      <field name="numero">14</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_4"/>
+    </record>
+    <record id="room_15" model="cineprex.salle">
+      <field name="numero">15</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_4"/>
+    </record>
+    <record id="room_16" model="cineprex.salle">
+      <field name="numero">16</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_5"/>
+    </record>
+    <record id="room_17" model="cineprex.salle">
+      <field name="numero">17</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_5"/>
+    </record>
+    <record id="room_18" model="cineprex.salle">
+      <field name="numero">18</field>
+      <field name="nb_place">300</field>
+      <field name="salle_3D">false</field>
+      <field name="dolby">true</field>
+      <field name="cinema_id" ref="cinema_5"/>
+    </record>
+    
 
-          <record id="object0" model="cineprex.cineprex">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
+    <!-- Liste des Films -->
+    <record id="movie_1" model="cineprex.movie">
+      <field name="nom">Interstellar</field>
+      <field name="realisateur">Christopher Nolan</field>
+      <field name="date_sortie">2014-11-05</field>
+      <field name="duree">169</field>
+      <field name="description">Dans un proche futur, la Terre est devenue hostile pour l'homme. Les tempêtes de sable sont fréquentes et il n'y a plus que le maïs qui peut être cultivé, en raison d'un sol trop aride. Cooper est un pilote, recyclé en agriculteur, qui vit avec son fils et sa fille dans la ferme familiale.</field>
+   </record>   
+    <record id="movie_2" model="cineprex.movie">
+      <field name="nom">Monty Python and the Holy Grail</field>
+      <field name="realisateur">Terry Gilliam</field>
+      <field name="date_sortie">1975-12-03</field>
+      <field name="duree">91</field>
+      <field name="description">Le roi Arthur et les Chevaliers de la Table Ronde partent à la recherche du Graal en chevauchant de bien étranges montures. Ils vont se retrouver dans un monde totalement insensé. La petite troupe va devoir passer une série d'épreuves en rencontrant un chevalier à trois têtes, des jouvencelles quelque peu entreprenantes et même un terrible lapin tueur.</field>
+    </record>
+    <record id="movie_3" model="cineprex.movie">
+      <field name="nom">The Dark Knight</field>
+      <field name="realisateur">Christopher Nolan</field>
+      <field name="date_sortie">2008-08-13</field>
+      <field name="duree">153</field>
+      <field name="description">Batman est plus que jamais déterminé à éradiquer le crime organisé qui sème la terreur en ville. Epaulé par le lieutenant Jim Gordon et par le procureur de Gotham City, Harvey Dent, Batman voit son champ d'action s'élargir. La collaboration des trois hommes s'avère très efficace et ne tarde pas à porter ses fruits jusqu'à ce qu'un criminel redoutable vienne plonger la ville de Gotham City dans le chaos.</field>
+    </record>
+    <record id="movie_4" model="cineprex.movie">
+      <field name="nom">Inception</field>
+      <field name="realisateur">Christopher Nolan</field>
+      <field name="date_sortie">2010-07-21</field> 
+      <field name="duree">147</field>
+      <field name="description">Dom Cobb est un voleur expérimenté dans l'art périlleux de `l'extraction' : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.</field>
+    </record>
+    <record id="movie_5" model="cineprex.movie">
+      <field name="nom">Troie</field>
+      <field name="realisateur">Wolfgang Petersen</field>
+      <field name="date_sortie">2004-05-13</field>
+      <field name="duree">163</field>
+      <field name="description">Dans la Grèce antique, l'enlèvement d'Hélène, reine de Sparte, par Paris, prince de Troie, est une insulte que le roi Ménélas ne peut supporter. L'honneur familial étant en jeu, Agamemnon, frère de Ménélas et puissant roi de Mycènes, réunit toutes les armées grecques afin de faire sortir Hélène de Troie. L'issue de la guerre de Troie dépendra notamment d'un homme, Achille. Arrogant, rebelle, et réputé invicible, celui-ci n'a d'attache pour rien ni personne si ce n'est sa propre gloire.</field>
+    </record>
 
-          <record id="object1" model="cineprex.cineprex">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
 
-          <record id="object2" model="cineprex.cineprex">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+    <!-- Liste des Séance -->
+    <record id="seance_1" model="cineprex.seance"> 
+      <field name="horaire">2022-03-12</field>
+      <field name="salle_id" ref="room_1"/>
+      <field name="movie_id" ref="movie_1"/>
+    </record>
+        <record id="seance_2" model="cineprex.seance">
+      <field name="horaire">2022-03-21</field>
+      <field name="salle_id" ref="room_3"/>
+      <field name="movie_id" ref="movie_2"/>
+    </record>
+    <record id="seance_3" model="cineprex.seance">
+      <field name="horaire">2022-03-23</field>
+      <field name="salle_id" ref="room_5"/>
+      <field name="movie_id" ref="movie_5"/>
+    </record>
+    <record id="seance_4" model="cineprex.seance">
+      <field name="horaire">2022-11-03</field>
+      <field name="salle_id" ref="room_17"/>
+      <field name="movie_id" ref="movie_5"/>
+    </record>
 
-          <record id="object3" model="cineprex.cineprex">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="object4" model="cineprex.cineprex">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
     </data>
 </odoo>

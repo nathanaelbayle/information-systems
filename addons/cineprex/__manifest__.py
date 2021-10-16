@@ -25,9 +25,9 @@
     'data': [
         'demo/demo.xml',
         'views/cinema_view.xml',
+        'views/salle_view.xml',
         'views/movie_view.xml',
-        'views/room_view.xml',
-        'views/filmshow_view.xml',
+        'views/seance_view.xml',
         'views/ticketing_view.xml',
     ],
     # only loaded in demonstration mode

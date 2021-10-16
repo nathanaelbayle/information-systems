@@ -10,10 +10,11 @@
           <field name="nb_place"/>
           <field name="salle_3D"/>
           <field name="dolby"/>
-          <field name="cinema_id"/>
+          <field name="seance_id"/>
         </tree>
       </field>
     </record>
+
 
     <record model="ir.ui.view" id="salle_form_view">
       <field name="name">Salle form</field>
@@ -21,11 +22,12 @@
       <field name="arch" type="xml">
         <form>
           <group>
-          <field name="numero"/>
-          <field name="nb_place"/>
-          <field name="salle_3D"/>
-          <field name="dolby"/>
-          <field name="cinema_id"/>
+            <field name="numero"/>
+            <field name="nb_place"/>
+            <field name="salle_3D"/>
+            <field name="dolby"/>
+            <field name="cinema_id"/>
+            <field name="seance_id"/>
           </group>
         </form>
       </field>

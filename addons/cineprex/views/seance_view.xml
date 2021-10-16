@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="seance_list_view">
+      <field name="name">seance list</field>
+      <field name="model">cineprex.seance</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="horaire"/>
+            <field name="salle_id"/>
+            <field name="movie_id"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="seance_list_view">
+      <field name="name">seance list</field>
+      <field name="model">cineprex.seance</field>
+      <field name="arch" type="xml">
+        <calendar string="Ideas" date_start="horaire" date_stop="horaire">
+          <field name="salle_id"/>
+        </calendar>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="seance_form_view">
+      <field name="name">seance form</field>
+      <field name="model">cineprex.seance</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="horaire"/>
+            <field name="salle_id"/>
+            <field name="movie_id"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="seance_action_window">
+      <field name="name">Séances</field>
+      <field name="res_model">cineprex.seance</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="cineprex" id="cineprex.menu_root"/>
+    <menuitem name="Séances" id="cineprex_seance_cat" parent="cineprex.menu_root" action="seance_action_window"/>
+    
+</odoo>

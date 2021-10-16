@@ -7,12 +7,16 @@ class CineprexMovie(models.Model):
 
     nom = fields.Char()
     realisateur = fields.Char()
+    date_sortie = fields.Date()
     duree = fields.Integer()
     description = fields.Char()
-    
 
+    seance_id = fields.Many2one(comodel_name='cineprex.seance', inverse_name='movie_id')
+    
+"""
     name = fields.Char()
     filmmaker = fields.Char()
     duration = fields.Integer()
     provider_id = fields.Many2one(comodel_name='cineprex.provider')
     filmshow_ids = fields.One2many(comodel_name='cineprex.filmshow', inverse_name='movie_id')
+"""

@@ -25,7 +25,6 @@
             <field name="adresse"/>
             <field name="ville"/>
             <field name="code_postal"/>
-
             <field name="room_ids"/>
           </group>
         </form>

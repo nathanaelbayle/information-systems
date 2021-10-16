@@ -11,6 +11,4 @@ class CineprexCinema(models.Model):
     code_postal = fields.Integer()
 
     room_ids = fields.One2many(comodel_name='cineprex.salle', inverse_name='cinema_id')
-
-    def getName(self):
-        return self.nom
+    

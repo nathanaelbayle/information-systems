@@ -3,5 +3,5 @@
 from . import cinema
 from . import movie
 from . import salle
-from . import ticketing
-from . import filmshow
+from . import ticket
+from . import seance
