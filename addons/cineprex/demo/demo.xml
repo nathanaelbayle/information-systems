@@ -295,8 +295,299 @@
         <field name="salle_id" ref="room_17"/>
         <field name="movie_id" ref="movie_5"/>
       </record>
+      <record id="seance_9" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_10" model="cineprex.seance">
+        <field name="horaire">2021-10-21 18:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
 
+      <!-- Séance du 21 Octobre -->
+      <record id="seance_11" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_12" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_13" model="cineprex.seance">
+        <field name="horaire">2021-10-21 18:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_14" model="cineprex.seance">
+        <field name="horaire">2021-10-21 22:00:00</field>
+        <field name="salle_id" ref="room_17"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_15" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_18"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_16" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_18"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_17" model="cineprex.seance">
+        <field name="horaire">2021-10-21 20:00:00</field>
+        <field name="salle_id" ref="room_18"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+    <record id="seance_18" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_19" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_20" model="cineprex.seance">
+        <field name="horaire">2021-10-21 20:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+    <record id="seance_21" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_22" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_23" model="cineprex.seance">
+        <field name="horaire">2021-10-21 20:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+    <record id="seance_24" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_25" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_26" model="cineprex.seance">
+        <field name="horaire">2021-10-21 20:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+    <record id="seance_27" model="cineprex.seance">
+        <field name="horaire">2021-10-21 10:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_28" model="cineprex.seance">
+        <field name="horaire">2021-10-21 14:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_29" model="cineprex.seance">
+        <field name="horaire">2021-10-21 20:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
 
+    <!-- Séance du 22 Octobre -->
+      <record id="seance_30" model="cineprex.seance">
+        <field name="horaire">2021-10-22 10:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_31" model="cineprex.seance">
+        <field name="horaire">2021-10-22 14:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_32" model="cineprex.seance">
+        <field name="horaire">2021-10-22 20:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+    <record id="seance_33" model="cineprex.seance">
+        <field name="horaire">2021-10-22 10:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_34" model="cineprex.seance">
+        <field name="horaire">2021-10-22 14:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_35" model="cineprex.seance">
+        <field name="horaire">2021-10-22 20:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+    <record id="seance_36" model="cineprex.seance">
+        <field name="horaire">2021-10-22 10:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_37" model="cineprex.seance">
+        <field name="horaire">2021-10-22 14:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_38" model="cineprex.seance">
+        <field name="horaire">2021-10-22 20:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+    <record id="seance_39" model="cineprex.seance">
+        <field name="horaire">2021-10-22 10:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_40" model="cineprex.seance">
+        <field name="horaire">2021-10-22 14:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_41" model="cineprex.seance">
+        <field name="horaire">2021-10-22 20:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+
+        <!-- Séance du 23 Octobre -->
+      <record id="seance_42" model="cineprex.seance">
+        <field name="horaire">2021-10-23 10:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_43" model="cineprex.seance">
+        <field name="horaire">2021-10-23 14:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_44" model="cineprex.seance">
+        <field name="horaire">2021-10-23 20:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+    <record id="seance_45" model="cineprex.seance">
+        <field name="horaire">2021-10-23 10:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_46" model="cineprex.seance">
+        <field name="horaire">2021-10-23 14:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_47" model="cineprex.seance">
+        <field name="horaire">2021-10-23 20:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+    <record id="seance_48" model="cineprex.seance">
+        <field name="horaire">2021-10-23 10:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_49" model="cineprex.seance">
+        <field name="horaire">2021-10-23 14:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_50" model="cineprex.seance">
+        <field name="horaire">2021-10-23 20:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+    <record id="seance_51" model="cineprex.seance">
+        <field name="horaire">2021-10-23 10:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_52" model="cineprex.seance">
+        <field name="horaire">2021-10-23 14:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_53" model="cineprex.seance">
+        <field name="horaire">2021-10-23 20:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+
+    <!-- Séance du 24 Octobre -->
+      <record id="seance_54" model="cineprex.seance">
+        <field name="horaire">2021-10-24 10:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_55" model="cineprex.seance">
+        <field name="horaire">2021-10-24 14:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+      <record id="seance_56" model="cineprex.seance">
+        <field name="horaire">2021-10-24 20:00:00</field>
+        <field name="salle_id" ref="room_1"/>
+        <field name="movie_id" ref="movie_2"/>
+      </record>
+    <record id="seance_57" model="cineprex.seance">
+        <field name="horaire">2021-10-24 10:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_58" model="cineprex.seance">
+        <field name="horaire">2021-10-24 14:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+      <record id="seance_59" model="cineprex.seance">
+        <field name="horaire">2021-10-24 20:00:00</field>
+        <field name="salle_id" ref="room_2"/>
+        <field name="movie_id" ref="movie_3"/>
+      </record>
+    <record id="seance_60" model="cineprex.seance">
+        <field name="horaire">2021-10-24 10:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_61" model="cineprex.seance">
+        <field name="horaire">2021-10-24 14:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+      <record id="seance_62" model="cineprex.seance">
+        <field name="horaire">2021-10-24 20:00:00</field>
+        <field name="salle_id" ref="room_3"/>
+        <field name="movie_id" ref="movie_4"/>
+      </record>
+    <record id="seance_63" model="cineprex.seance">
+        <field name="horaire">2021-10-24 10:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_64" model="cineprex.seance">
+        <field name="horaire">2021-10-24 14:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
+      <record id="seance_65" model="cineprex.seance">
+        <field name="horaire">2021-10-24 20:00:00</field>
+        <field name="salle_id" ref="room_4"/>
+        <field name="movie_id" ref="movie_5"/>
+      </record>
     <!-- Liste des Tarifs -->
     <record id="tarif_1" model="cineprex.tarif">
       <field name="name">Etudiant</field>
