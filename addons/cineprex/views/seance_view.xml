@@ -5,6 +5,9 @@
       <field name="name">seance list</field>
       <field name="model">cineprex.seance</field>
       <field name="arch" type="xml">
+          <!--<search string="Seance">
+            <filter string="salle_id" name="salle_id" ref="room_1"/>
+        </search>-->
         <tree>
             <field name="horaire"/>
             <field name="salle_id"/>
