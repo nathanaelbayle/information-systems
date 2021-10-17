@@ -14,7 +14,7 @@ class CineprexMovie(models.Model):
     duree = fields.Integer("Durée")
     description = fields.Char("Description")
 
-    seance_id = fields.Many2one(string="", comodel_name='cineprex.seance', inverse_name='movie_id')
+    seance_id = fields.One2many(string="Séance", comodel_name='cineprex.seance', inverse_name='movie_id')
 
     @api.depends('nom', 'date_sortie', 'realisateur')
     def _valeur(self):

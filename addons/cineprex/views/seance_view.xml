@@ -31,7 +31,7 @@
       <field name="name">Calendrier Séances</field>
       <field name="model">cineprex.seance</field>
       <field name="arch" type="xml">
-      <calendar string="Planning des Séance" date_start="horaire" mode="month" color="valeur" quick_add="False" >
+      <calendar string="Planning des Séance" date_start="horaire" mode="week" color="valeur" quick_add="False" >
          <field name="valeur"/>
       </calendar>
      </field>

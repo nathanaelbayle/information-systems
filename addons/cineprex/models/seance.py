@@ -16,4 +16,4 @@ class CineprexSeance(models.Model):
     @api.depends('horaire', 'movie_id')
     def _valeur(self):
         for record in self:
-            record.valeur = "Séance du " + str(record.horaire) + " pour le film " + record.movie_id.nom
+            record.valeur = "Séance du " + str(record.horaire)  + " pour le film " + record.movie_id.nom
