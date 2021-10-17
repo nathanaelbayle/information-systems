@@ -16,4 +16,3 @@ docker-compose up
     - mail : `john.doe@example.com`
     - password : `admin`
     - master password : `uf8u-4f3v-9rja`
-` 
